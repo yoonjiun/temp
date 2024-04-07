@@ -1,0 +1,49 @@
+body {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.cate_section {
+  display: flex;
+  gap: 20px;
+}
+
+.mymenu_section {
+  display: flex;
+  gap: 20px;
+}
+
+.main_section {
+  display: flex;
+  position: absolute;
+}
+.main_section .product_item_1,
+.main_section .product_item_2,
+.main_section .product_item_3,
+.main_section .product_item_4 {
+  width: 50%;
+}
+.main_section .product_item_1 .item_txt,
+.main_section .product_item_2 .item_txt,
+.main_section .product_item_3 .item_txt,
+.main_section .product_item_4 .item_txt {
+  position: relative;
+}/*# sourceMappingURL=cs5.css.map */

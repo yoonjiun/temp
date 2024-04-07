@@ -1,0 +1,153 @@
+body{
+    font-family: 'Pretendard', sans-serif;
+    margin:0px;
+    padding:0px;
+    color: #121221;
+    background-image: url(./img/willow-xk-nl-1AVWC1RE-unsplash.jpg);
+    background-repeat : no-repeat;
+    background-size: 100%;
+}
+ul,
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    mix-blend-mode: difference;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    left:30px;
+    right:30px;
+    top:16px;
+    .main_menu{
+        display:flex;
+        gap:12px;
+        text-transform: uppercase;
+        font-size:16px;
+        font-weight:400;
+    }
+    .mobile_menu{
+        display:none;
+    }
+}
+.main{
+    color: #fff;
+    .main_title{
+        padding-top:170px;
+        padding-left:30px;
+        font-size:6vw;
+        line-height: 7vw;
+        font-weight:700;
+    }
+    .business_info{
+        margin-top:125px;
+        display:flex;
+        justify-content: space-between;
+        padding:0px 30px;
+        text-transform: uppercase;
+        .bi_left {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .bi_right{
+            display:inline-block;
+            font-size:14px;
+            font-weight: 300;
+            color: #8e8e8e;
+        }
+    }
+    .main_img{
+        margin-top:16px;
+        position: relative;
+        img{
+            width:100%;
+            background-repeat : no-repeat;
+            background-size: 100%;
+        }
+        .main_desc1{
+            position: absolute;
+            left:30px;
+            top:32px;
+            font-size:60px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color:#a59e92;
+        }
+        .main_desc2{
+            position: absolute;
+            left:30px;
+            top:32px;
+            text-align: center;
+            font-size:44px;
+            line-height: 24px;;
+            color:#fff;
+        }
+        .main_desc3{
+            position: absolute;
+            left:30px;
+            top:82px;
+            font-size:14px;
+            line-height: 24px;;
+            color:#fff;
+        }
+        .project_items {
+            margin-top: 27px;
+            padding-left: 60px;
+            padding-right: 60px;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        
+            .pr_line {
+                display: flex;
+                gap: 15px;
+                margin-bottom:15px;
+             
+                .pr_item {
+                    flex: 1;
+                    width:20vw;
+                    position: relative;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    &:hover{
+                        
+                        .pr_img{
+                            transform: scale(1.2);
+                            
+                        }
+                    }
+                    .pr_img {
+                        transition-duration: 0.3s;
+                        img {
+                            width: 100%;
+                            display:block;
+                        }
+                    }
+                    .pr_info{
+                        position: absolute;
+                        left:0px;
+                        right:0px;
+                        top:20px;
+                        color:#fff;
+                        display: flex;
+                        gap:10px;
+                        justify-content: center;;
+                        
+        
+                    }
+                }
+            }
+        }
+    }
+    
+    .arrow{
+        position: fixed;
+        bottom:20px;
+        right:0px;
+        left:0px;
+        display:flex;
+        justify-content: center;
+    }
+}

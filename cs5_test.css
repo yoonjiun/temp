@@ -1,0 +1,95 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 15px;
+  left: 30px;
+  right: 30px;
+}
+.header .menu_section {
+  display: flex;
+  gap: 20px;
+}
+
+.main_desc {
+  font-size: 20px;
+  font-style: #323159;
+  line-height: 30px;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+.product_items {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.product_items .pr_line {
+  display: flex;
+  /*flex-direction: column; 플랙스- 가로로 배치를 세로로 배치하고싶을떄, 모바일상에서 일열배치 
+  justify-content: center; 세로배치된상태에선 기존 가로중앙정렬이 세로 중양 정렬로 적용됨
+  align-items: center; 세로배치된상태에선 기존 세로중앙정렬이 가로중앙정렬로 바뀜
+
+  display: grid; 최근나온 속성, 옛 브라우저면 적용이 안될수도있음.
+  grid-template-columns: 1fr 1fr 1fr; 3개를 1대1대1로 나누겠다
+  grid-template-columns: 100px 1fr 1fr; 3개를 100px대1대1로 나누겠다
+  gap: 15px 20px; 가로갭은 15px, 세로갭은 20px 
+  */
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.product_items .pr_line .pr_item {
+  flex: 1;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.product_items .pr_line .pr_item .pr_info {
+  position: absolute;
+  top: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.product_items .pr_line .pr_item .pr_img {
+  transition-duration: 0.3s;
+}
+.product_items .pr_line .pr_item .pr_img img {
+  width: 100%;
+}
+.product_items .pr_line .pr_item:hover .pr_img {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .header .menu_section {
+    display: none;
+  }
+  .pr_item {
+    width: 100%;
+    flex: initial;
+  }
+  .product_items .pr_line {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=cs5_test.css.map */

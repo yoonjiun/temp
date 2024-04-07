@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #121221;
+  background-color: #fff;
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+  font-family: "Pretendard", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 30px;
+  top: 15px;
+  right: 30px;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+.header .main_menu {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header .mobile_menu {
+  display: none;
+}
+
+.main .main_title {
+  width: 100%;
+  padding-top: 170px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  font-size: 4.9vw;
+  line-height: 4.9vw;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.main .main_title .span_t {
+  width: 15vw;
+  display: inline-block;
+}
+.main .business_info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 500;
+}
+.main .business_info .bi_right {
+  display: flex;
+  gap: 20px;
+}
+.main .main_img {
+  margin-top: 30px;
+  position: relative;
+}
+.main .main_img img {
+  width: 100%;
+}
+.main .main_img .main_desc {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  color: #fff;
+  font-size: 1vw;
+  font-weight: 300;
+  line-height: 2vw;
+  letter-spacing: -0.01em;
+}
+.main .arrow {
+  position: fixed;
+  left: calc(50% - 35px);
+  bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .logo {
+    width: 20%;
+  }
+  .header .main_menu {
+    display: none;
+  }
+  .header .mobile_menu {
+    display: block;
+  }
+  .main .main_title {
+    width: 100%;
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+  .main .business_info {
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+  .main .main_img {
+    width: 100%;
+  }
+  .main .main_img img {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover; /*원본비율 유지한상태로 늘려줌*/
+  }
+  .main .main_img .main_desc {
+    font-size: 15px;
+    line-height: 6vw;
+  }
+  .arrow {
+    width: 50%;
+  }
+}/*# sourceMappingURL=course6_test.css.map */

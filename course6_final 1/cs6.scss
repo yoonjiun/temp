@@ -1,0 +1,140 @@
+body{
+    font-family: 'Pretendard', sans-serif;
+    margin:0px;
+    padding:0px;
+    color: #121221;
+    background-color: #fff;;
+}
+ul,
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.header{
+    mix-blend-mode: difference;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    left:30px;
+    right:30px;
+    top:16px;
+    .main_menu{
+        display:flex;
+        gap:12px;
+        text-transform: uppercase;
+        font-size:22px;
+        font-weight:500;
+    }
+    .mobile_menu{
+        display:none;
+    }
+}
+.main{
+    .main_title{
+        padding-top:170px;
+        padding-left:30px;
+        font-size:4.2vw;
+        line-height: 4.7vw;
+        font-weight:500;
+        .span_t{
+            width:15vw;
+            display:inline-block;
+        }
+    }
+    .business_info{
+        margin-top:125px;
+        display:flex;
+        justify-content: space-between;
+        font-size:24px;
+        padding:0px 30px;
+        text-transform: uppercase;
+        font-weight:500;
+        .bi_right{
+            display:flex;
+            gap:100px;
+        }
+
+    }
+    .main_img{
+        margin-top:16px;
+        position: relative;
+        img{
+            width:100%;
+        }
+        .main_desc{
+            position: absolute;
+            left:30px;
+            top:32px;
+            font-size:18px;
+            line-height: 24px;;
+            color:#fff;
+        }
+    }
+    .arrow{
+        position: fixed;
+        bottom:20px;
+        right:0px;
+        left:0px;
+        display:flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .header{
+        left:15px;
+        right:15px;
+        top:7px;
+        .logo{
+            img{
+                height:12px;
+            }
+        }
+        .main_menu{
+            font-size:15px;
+            display:none;
+        }
+        .mobile_menu{
+            display:block;
+            font-size:15px;
+            font-weight:500;
+        }
+    }
+    .main{
+        .main_title{
+            padding-top:103px;
+            padding-left:15px;
+            font-size:5vw;
+            line-height: 5.7vw;
+        }
+        .business_info{
+            margin-top:33px;
+            font-size:15px;
+            padding:0px 15px;
+            .bi_right{
+                gap:10px
+            }
+        }
+        .main_img{
+            img{
+                width:100%;
+                height:600px;
+                object-fit: cover;
+            }
+            .main_desc{
+                left:15px;
+                top:17px;
+                font-size:14px;
+                line-height: 19px;
+            }
+        }
+    }
+}

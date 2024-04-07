@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black ;
+            display: flex;
+            gap: 20px;
+            justify-content: end;
+            justify-content: space-between;
+            align-items: start center end;
+            flex-wrap: wrap;/* flex에서 줄바꿈되고싶을떄 */
+        }
+        .right_box {
+            flex: 2;
+            height: 100px;
+            display: inline-block;
+            background-color: red;
+        }
+        .left_box {
+            flex: 1;
+            height: 100px;
+            display: inline-block;
+            background-color: blue;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="right_box"></div>
+        <div class="left_box"></div>
+        <div class="right_box"></div>
+        <div class="left_box"></div>
+        <div class="right_box"></div>
+        <div class="left_box"></div>
+        <div class="right_box"></div>
+        <div class="left_box"></div>
+        
+    </div>
+
+
+</body>
+</html>

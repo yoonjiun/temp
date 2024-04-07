@@ -1,0 +1,63 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    .cate_section {
+        display: flex;
+        gap:20px;
+        width: 30%;
+    }
+    .menu_section {
+        display: flex;
+        justify-content: end;
+        gap:20px;
+        width: 30%;
+    }
+    /*.logo_section {
+        position: absolute;
+        left : calc(50% -100px);
+    } 로고를 중앙으로 배치하고싶을때*/
+}
+.product_items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .pr_item:nth-child(2n){
+        border-right: none;
+    }
+    
+    .pr_item {
+        width:50%;
+        position: relative;
+        border-right: 1px solid #121212 ;
+        box-sizing: border-box;
+        border-bottom: 1px solid #121212 ;
+        &:nth-child(2n) {
+            border-right: none;
+        }
+        .item_txt {
+            position:absolute;
+            top:80px;
+            left:80px;
+        }
+        .item_img img{
+            display: block;/*박스공간뜨는것 빼고싶을떄*/
+            width: 100%;
+        }
+    }
+}

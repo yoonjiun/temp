@@ -1,0 +1,66 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+ul, li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    right: 30px;
+
+}
+/*
+
+border-radius :20px;
+overflow :hidden;
+.pr_item{
+&:hover{
+    .pr_img{
+        transition-duration: 0.3s;
+        transform: scale(1.2);
+    }
+}*/
+
+@media screen and (max-width:900px) {
+    .header {
+        .cate_section { display: none;}
+        .mymenu_section { display: none;}
+    }
+    .product_items{
+        .pr_item { width: 100%;
+        }
+    }
+}
+.bt {
+    width: 200px;
+    height: 80px;
+    stroke: 1px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s; /*변화속도조절*/
+    animation: ani1 1s infinite;
+}
+.bt:hover{
+    color: red;
+}
+@keyframes ani1 {
+    0% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+        transform: translate(200px) rotate(90deg) scale(2);
+    }
+}
+
+
